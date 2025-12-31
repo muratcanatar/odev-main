@@ -27,7 +27,7 @@ export default function PlayerDetailPage({ params }: { params: Promise<{ id: str
   const playoffStats = playoffData?.data?.player?.stats
   const regularStats = basicData?.data?.player?.stats
 
-  // Fetch current team info based on player's teamID
+  // Fetch current team info based on player's teamIDdd
   const { data: teamData } = useTeam(player?.teamID || null)
   const currentTeam = teamData?.data?.team
 
